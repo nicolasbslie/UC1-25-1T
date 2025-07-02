@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box; /*Inclui bordas e padding no tamanho total do elemento*/
+}
+
+body{
+    background-color: #1E1E1E;
+    background: linear-gradient(135deg, #1E1E1E, #2A2A2A) ; /*fundo com gradiente azul na diagona (135deg)*/
+    color:#CFCFCF;
+    font-family: 'Times New Roman', Times, serif, 'Arial Narrow Bold', sans-serif;
+    padding: 80px; 
+
+    display: flex; /*Usa flexbox para o posicionamento*/
+    flex-direction: column; /*organiza os filhos (elementos) em coluna*/
+    align-items: center; /*centraliza horizontalmente*/
+    justify-content: flex-start; /*Alinha os filhos (elementos) no topo da página*/
+    min-height: 100vh; /*Garante que o body ocupe pelo menos toda a altura da tela*/
+    margin: 0; /*remove margens padrão do navegador*/
+    padding: 2rem; /*Espaço interno nas bordas do body*/
+    background-image: url('https://wallpapers.com/images/hd/funny-duck-pictures-r25k9t4kujbfjlxx.jpg');
+    h1{
+        margin-bottom: 1rem; /*rem= "root em" valor relativo ao tamanho de componentes emem html*/
+        text-shadow: 0 0 10px regba (200, 200, 200, 0.3);
+        text-align: center;
+        color: #E0E0E0;
+        text-shadow: 0 0 6px black;
+    }
+}
+
+/*Estilizando so botões*/
+.choices{
+    display: flex; /*organiza os botões lado a lado*/
+    gap: 1rem; /*Espaço entre os botões*/
+    margin-bottom: 2rem; /*Espaço abaixo do container*/
+}
+
+button{
+    font-family: 'Times New Roman', Times, serif, 'Arial Narrow Bold', sans-serif;
+    display: block; /*Faz com que o botão se comporte como um bloco(ocupa uma largura disponível)*/
+    width: 100%; /*nosso botão ocupa uma largura em 100%*/
+    max-width: 400px; /*largura máxima de 400px*/
+    margin: 10px auto; /*margem de 10px verticalmente e centralizado horizonal*/
+    padding: 10px; /*espaçamento interno*/
+    font-size: 16px; /*tamanho da fonte*/
+    background-color: #3A3A3A; /*cor do fundo*/
+    color: #F5F5F5; /*cor do texto do botão*/ 
+    border: 2px solid #555; /*dotted(pontilhada, double(linha dupla), dashed(traçada) | 2px é espessura*/
+    border-radius: 8px; /*borda do botão*/
+    cursor: pointer; /*mostra o ponteiro do cursor como "mão"*/
+}
+
+button:hover{
+    background-color: #555555; /*Muda a cor de fundo quando o mouse passa por cima do botão*/
+}
+/*Estilo dos parágrafos de escolha*/
+p{
+    font-size: 1.2rem; 
+    margin: 0.5rem 0; /*margem acima e abaixo*/
+    min-height: 1.5rem; /*garante a altura mínima para evitar pulos quando o texto muda*/
+    text-align: center; /*centraliza o centro*/
+    text-shadow: 0 0 6px black; /*sombra do texto*/
+}
+
+#winner{
+    font-weight: 700; /*negrito forte*/
+    font-size: 1.5rem; /*fonte maior para o destaque*/
+    margin-top: 1.5rem; /*espaço acima do texto*/
+    color: white; /*banco com transparência*/
+    text-shadow: 0 0 10px #555, 0 0 20px #555, 0 0 30px #555; /*camadas de brilho*/
+}
